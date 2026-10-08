@@ -305,11 +305,53 @@ code { font-family: var(--mono); font-size: .9em; background: rgba(255,255,255,.
 
 /* ---------- 11. Rodapé ---------- */
 .rodape { border-top: 1px solid var(--borda); padding: 34px 0; margin-top: 40px; }
-.rodape__interno { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+.rodape__interno { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+.rodape__contatos { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.rodape__contato {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--texto-suave); font-size: .87rem; text-decoration: none;
+  transition: color var(--transicao);
+}
+.rodape__contato:hover { color: var(--primaria); }
+.rodape__contato--zap:hover { color: var(--verde); }
 .rodape p { color: var(--texto-fraco); font-size: .87rem; }
-.rodape__links { display: flex; gap: 20px; }
+.rodape__links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
 .rodape__links a { color: var(--texto-suave); font-size: .87rem; text-decoration: none; }
 .rodape__links a:hover { color: var(--primaria); }
+
+/* ---------- Botão flutuante WhatsApp (loja) ---------- */
+.zap-flutuante {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, .4),
+              0 0 0 4px rgba(37, 211, 102, .15);
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+  animation: zap-pulsar 2s infinite;
+  transition: transform .2s, box-shadow .2s;
+}
+.zap-flutuante:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, .5),
+              0 0 0 6px rgba(37, 211, 102, .2);
+}
+@keyframes zap-pulsar {
+  0%   { box-shadow: 0 8px 24px rgba(37, 211, 102, .4), 0 0 0 0 rgba(37, 211, 102, .4); }
+  70%  { box-shadow: 0 8px 24px rgba(37, 211, 102, .4), 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 8px 24px rgba(37, 211, 102, .4), 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+@media (max-width: 560px) {
+  .zap-flutuante { width: 54px; height: 54px; font-size: 22px; right: 16px; bottom: 16px; }
+}
 
 /* ---------- 12. Modais ---------- */
 .fundo-modal {

@@ -657,6 +657,89 @@ em { color: var(--acento); font-style: normal; }
   white-space: nowrap;
 }
 
+.contato__canal--zap .contato__icone {
+  background: linear-gradient(140deg, rgba(37, 211, 102, .18), rgba(16, 185, 129, .18));
+  border-color: rgba(16, 185, 129, .4);
+  color: var(--verde);
+}
+.contato__canal--zap:hover .contato__icone {
+  background: var(--verde);
+  color: #fff;
+}
+
+/* ---------------- Botão flutuante WhatsApp ---------------- */
+.zap-flutuante {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, .4),
+              0 0 0 4px rgba(37, 211, 102, .15);
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+  animation: zap-pulsar 2s infinite;
+  transition: transform .2s, box-shadow .2s;
+}
+.zap-flutuante:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, .5),
+              0 0 0 6px rgba(37, 211, 102, .2);
+}
+.zap-flutuante__tooltip {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: var(--texto);
+  color: var(--fundo);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  transform: translateY(-50%) translateX(10px);
+}
+.zap-flutuante:hover .zap-flutuante__tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+.zap-flutuante__tooltip::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: var(--texto);
+}
+
+@keyframes zap-pulsar {
+  0%   { box-shadow: 0 8px 24px rgba(37, 211, 102, .4), 0 0 0 0 rgba(37, 211, 102, .4); }
+  70%  { box-shadow: 0 8px 24px rgba(37, 211, 102, .4), 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 8px 24px rgba(37, 211, 102, .4), 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+@media (max-width: 760px) {
+  .zap-flutuante {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+    right: 16px;
+    bottom: 16px;
+  }
+  .zap-flutuante__tooltip { display: none; }
+}
+
 /* ---------------- Rodapé ---------------- */
 .rodape {
   border-top: 1px solid var(--borda);
