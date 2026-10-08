@@ -13,9 +13,9 @@ const PAGES  = 'https://marcelooliveira8052668-cyber.github.io';
 
 const projetos = [
   {
-    nome: 'Loja Online Completa',
+    nome: 'Minha Loja Online',
     cat: 'E-commerce',
-    desc: 'E-commerce completo com 50 produtos, carrinho, cupons, formas de pagamento, entrega por Shopee/Mercado Livre e avaliações de clientes.',
+    desc: 'E-commerce com 50 produtos, carrinho, cupons, formas de pagamento, entrega por Shopee/Mercado Livre e avaliações de clientes.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/Codigo-Loja-Online.jpg',
     demo: PAGES + '/codigo-loja-online/',
@@ -31,18 +31,18 @@ const projetos = [
     repo: GITHUB + '/checkout-cyber-metal'
   },
   {
-    nome: 'Hamburgueria Online',
+    nome: 'Brasa Burger',
     cat: 'E-commerce',
-    desc: 'Cardápio digital com catálogo de lanches e bebidas, filtros e botão para montar o pedido no carrinho.',
+    desc: 'Cardápio digital da hamburgueria Brasa Burger, com catálogo de lanches e bebidas, filtros e botão para montar o pedido no carrinho.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/hamburgueria.jpg',
     demo: PAGES + '/hamburgueria/',
     repo: GITHUB + '/hamburgueria'
   },
   {
-    nome: 'Trilha Corporativa · SENAI',
+    nome: 'Trilha Corporativa',
     cat: 'SENAI',
-    desc: 'Plataforma corporativa com trilhas de aprendizagem, painel do aluno e fluxo completo de acompanhamento — projeto acadêmico SENAI.',
+    desc: 'Plataforma de capacitação corporativa do SENAI — "capacitação em um só lugar", com trilhas, painel do aluno e acompanhamento.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/Plataforma_Corporativa_SENAI.jpg',
     demo: 'trilha-corporativa/',
@@ -68,7 +68,7 @@ const projetos = [
     repo: GITHUB + '/NF-Control'
   },
   {
-    nome: 'SkillMatch Web',
+    nome: 'SkillMatch',
     cat: 'Sistemas',
     desc: 'Plataforma que conecta vagas e candidatos por compatibilidade de habilidades, com análise em tempo real.',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -79,7 +79,7 @@ const projetos = [
   {
     nome: 'DevBook',
     cat: 'Sistemas',
-    desc: 'Rede social de desenvolvedores com feed de publicações, perfis e interações entre usuários.',
+    desc: 'Livro didático digital de programação com revisão espaçada — curso de Full Stack do zero ao deploy, em formato de livro.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/devbook.jpg',
     demo: PAGES + '/devbook/',
@@ -104,9 +104,9 @@ const projetos = [
     repo: GITHUB + '/english-platform'
   },
   {
-    nome: 'Tutor IA',
+    nome: 'Lina — Tutor de Inglês',
     cat: 'Educação',
-    desc: 'Tutor inteligente que explica conteúdos passo a passo e gera exercícios personalizados.',
+    desc: 'Lina, tutora virtual de inglês com inteligência artificial: explica conteúdo, corrige erros e monta exercícios personalizados.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/tutor-IA.jpg',
     demo: PAGES + '/tutor-IA/',
@@ -131,36 +131,36 @@ const projetos = [
     repo: GITHUB + '/casamentos'
   },
   {
-    nome: 'Salão de Beleza',
+    nome: 'Sylvia Studio de Beleza',
     cat: 'Sites',
-    desc: 'Site institucional com serviços, galeria, equipe e agendamento de horários.',
+    desc: 'Site do salão de beleza Sylvia Studio, com serviços, preços, galeria e agendamento de horários.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/Salao-de-beleza.jpg',
     demo: PAGES + '/Salao-de-beleza/',
     repo: GITHUB + '/Salao-de-beleza'
   },
   {
-    nome: 'Site para Advogado',
+    nome: 'Dr. João Silva · Advocacia',
     cat: 'Sites',
-    desc: 'Landing page profissional para escritório de advocacia, com áreas de atuação e contato.',
+    desc: 'Landing page profissional para o escritório do Dr. João Silva, com áreas de atuação e atendimento.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/Site-para-Advogado.jpg',
     demo: PAGES + '/Site-para-Advogado/',
     repo: GITHUB + '/Site-para-Advogado'
   },
   {
-    nome: 'Viagem Pro',
+    nome: 'Travel Planner Pro',
     cat: 'Sites',
-    desc: 'Site de viagens com roteiros, destinos em destaque e planejamento de rota.',
+    desc: 'Planejador de viagens com roteiros, custos, checklist e organização do trajeto em um só painel.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/viagem-pro.jpg',
     demo: PAGES + '/viagem-pro/',
     repo: GITHUB + '/viagem-pro'
   },
   {
-    nome: 'Gerador de Sites',
+    nome: 'Gerador de Sites Dola PRO',
     cat: 'Ferramentas',
-    desc: 'Ferramenta que monta um site a partir das informações do usuário e exporta o código pronto.',
+    desc: 'Ferramenta que monta um site a partir das informações do usuário e devolve o código pronto para publicar.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     img: 'screenshots/gerador-de-sites.jpg',
     demo: PAGES + '/gerador-de-sites/',
