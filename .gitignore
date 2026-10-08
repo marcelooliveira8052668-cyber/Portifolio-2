@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Segredos e ambiente
+.env
+.env.*
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+temp/
+tmp/

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Portfólio profissional de Marcelo Oliveira — desenvolvedor front-end. Sites, sistemas web e aplicações móveis progressivas (PWA).">
+  <title>Marcelo Oliveira · Desenvolvedor Front-End</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+  <a class="pular-conteudo" href="#projetos">Pular para os projetos</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="cabecalho" id="topo">
+    <div class="container cabecalho__interno">
+      <a href="#topo" class="marca">
+        <span class="marca__monograma" aria-hidden="true">MO</span>
+        <span class="marca__nome">Marcelo&nbsp;Oliveira</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#contato" class="nav__link">Contato</a>
+        <a href="https://github.com/marcelooliveira8052668-cyber" target="_blank" rel="noopener" class="nav__link nav__link--externo">GitHub ↗</a>
+      </nav>
+
+      <button class="botao-hamburguer" id="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__brilho" aria-hidden="true"></div>
+      <div class="container hero__interno">
+
+        <div class="hero__conteudo">
+          <p class="sobretitulo">
+            <span class="sobretitulo__ponto"></span>
+            Disponível para projetos
+          </p>
+
+          <h1 class="hero__titulo">
+            Marcelo Oliveira
+            <span class="hero__titulo--destaque">Desenvolvedor Front-End</span>
+          </h1>
+
+          <p class="hero__descricao">
+            Construo interfaces web rápidas, acessíveis e responsivas — de lojas virtuais
+            completas a <strong>aplicações móveis progressivas (PWA)</strong> que funcionam
+            offline e instalam direto na tela inicial do celular.
+          </p>
+
+          <div class="hero__acoes">
+            <a href="#projetos" class="botao botao--primario">Ver projetos</a>
+            <a href="#destaque" class="botao botao--secundario">Testar o Scanner ↓</a>
+          </div>
+
+          <dl class="hero__numeros">
+            <div>
+              <dt>Projetos publicados</dt>
+              <dd data-contador="30">0</dd>
+            </div>
+            <div>
+              <dt>Tecnologias</dt>
+              <dd data-contador="12">0</dd>
+            </div>
+            <div>
+              <dt>Usuários do Scanner</dt>
+              <dd>ativo</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero__cartao" aria-label="Resumo técnico">
+          <div class="cartao-cabecalho">
+            <span class="ponto ponto--vermelho"></span>
+            <span class="ponto ponto--amarelo"></span>
+            <span class="ponto ponto--verde"></span>
+            <span class="cartao-cabecalho__arquivo">sobre-mim.js</span>
+          </div>
+          <pre class="cartao-corpo"><code><span class="tk-chave">const</span> <span class="tk-var">marcelo</span> = {
+  <span class="tk-prop">cargo</span>: <span class="tk-str">"Front-End Developer"</span>,
+  <span class="tk-prop">foco</span>: [<span class="tk-str">"HTML"</span>, <span class="tk-str">"CSS"</span>, <span class="tk-str">"JavaScript"</span>],
+  <span class="tk-prop">extras</span>: [<span class="tk-str">"React"</span>, <span class="tk-str">"PWA"</span>, <span class="tk-str">"Node"</span>],
+  <span class="tk-prop">entrega</span>: <span class="tk-str">"responsiva + acessível"</span>,
+  <span class="tk-prop">modo</span>: <span class="tk-str">"aprender sempre"</span>
+};</code></pre>
+          <div class="cartao-rodape">
+            <span class="etiquetas">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>React</span><span>Git</span>
+            </span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ================= PROJETO EM DESTAQUE ================= -->
+    <section class="destaque" id="destaque">
+      <div class="container">
+        <div class="destaque__cartao">
+          <div class="destaque__midia">
+            <img src="screenshots/scanner-de-documentos.png"
+                 alt="Aplicativo Scanner de Documentos aberto no celular, mostrando um contrato escaneado no editor"
+                 width="800" height="574" loading="lazy" decoding="async">
+            <span class="destaque__selo">Projeto em destaque</span>
+          </div>
+
+          <div class="destaque__corpo">
+            <p class="secao__rotulo">Aplicativo Web · PWA</p>
+            <h2 class="destaque__titulo">Scanner de Documentos</h2>
+            <p class="destaque__descricao">
+              Um scanner completo que roda no navegador do iPhone: captura com a câmera,
+              recorta a página, aplica nitidez inteligente, monta o PDF e compartilha
+              pelo WhatsApp. Funciona <strong>offline</strong> e instala como aplicativo.
+            </p>
+
+            <ul class="destaque__lista">
+              <li>Detecta os quatro cantos da folha e acende a guia em verde</li>
+              <li>Zoom com pinça (iOS e Android) e botões + / − na tela</li>
+              <li>Remoção de ruído calibrada para texto continuar legível no WhatsApp</li>
+              <li>Geração de PDF no aparelho, sem enviar nada para servidor</li>
+            </ul>
+
+            <div class="etiquetas etiquetas--grandes">
+              <span>JavaScript</span><span>PWA</span><span>Service Worker</span>
+              <span>Canvas API</span><span>IndexedDB</span>
+            </div>
+
+            <div class="destaque__acoes">
+              <a href="https://marcelooliveira8052668-cyber.github.io/scanner-de-documentos/"
+                 target="_blank" rel="noopener" class="botao botao--primario">Usar agora ↗</a>
+              <a href="scanner-pdf-iphone/" class="botao botao--secundario">Ver código</a>
+              <a href="https://github.com/marcelooliveira8052668-cyber/scanner-de-documentos"
+                 target="_blank" rel="noopener" class="botao botao--fantasma">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJETOS ================= -->
+    <section class="secao" id="projetos">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <div>
+            <p class="secao__rotulo">Portfólio</p>
+            <h2 class="secao__titulo">Projetos selecionados</h2>
+            <p class="secao__subtitulo">
+              Uma seleção dos melhores trabalhos — lojas, sistemas, jogos e ferramentas.
+            </p>
+          </div>
+        </header>
+
+        <div class="filtros" id="filtros" role="tablist" aria-label="Filtrar projetos por categoria"></div>
+
+        <div class="grade" id="grade-projetos"></div>
+
+        <p class="grade__vazio" id="grade-vazio" hidden>Nenhum projeto nesta categoria.</p>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="secao secao--alternada" id="sobre">
+      <div class="container sobre">
+        <div class="sobre__texto">
+          <p class="secao__rotulo">Sobre mim</p>
+          <h2 class="secao__titulo">Front-end com foco em quem usa</h2>
+          <p>
+            Sou desenvolvedor front-end e atuo construindo interfaces que precisam
+            funcionar bem em celulares de entrada, conexão instável e para pessoas
+            que não são técnicas. Cada projeto começa pela pergunta
+            <em>“isso é fácil de usar no celular?”</em>.
+          </p>
+          <p>
+            Trabalho com HTML, CSS e JavaScript modernos, componentes reutilizáveis,
+            versionamento no Git e publicação automática via GitHub Pages. Também
+            desenvolvo aplicações React e PWAs com cache offline.
+          </p>
+          <a href="#contato" class="botao botao--primario">Vamos conversar</a>
+        </div>
+
+        <div class="sobre__habilidades">
+          <article class="habilidade">
+            <h3>Estrutura &amp; Estilo</h3>
+            <div class="etiquetas"><span>HTML5</span><span>CSS3</span><span>Sass</span><span>Flexbox</span><span>Grid</span><span>Responsive Design</span></div>
+          </article>
+          <article class="habilidade">
+            <h3>Lógica &amp; Interações</h3>
+            <div class="etiquetas"><span>JavaScript (ES6+)</span><span>React</span><span>DOM API</span><span>Canvas API</span><span>Fetch / API REST</span></div>
+          </article>
+          <article class="habilidade">
+            <h3>PWA &amp; Performance</h3>
+            <div class="etiquetas"><span>Service Worker</span><span>Cache offline</span><span>IndexedDB</span><span>Lighthouse</span></div>
+          </article>
+          <article class="habilidade">
+            <h3>Ferramentas</h3>
+            <div class="etiquetas"><span>Git</span><span>GitHub</span><span>GitHub Pages</span><span>Vite</span><span>Terminal</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="secao" id="contato">
+      <div class="container contato">
+        <p class="secao__rotulo">Contato</p>
+        <h2 class="secao__titulo">Tem um projeto em mente?</h2>
+        <p class="secao__subtitulo">
+          Me mande uma mensagem — respondo normalmente no mesmo dia.
+        </p>
+
+        <div class="contato__canais">
+          <a class="contato__canal" href="mailto:marcelo.oliveira@exemplo.com">
+            <span class="contato__icone">✉</span>
+            <span class="contato__info">
+              <strong>E-mail</strong>
+              <small>marcelo.oliveira@exemplo.com</small>
+            </span>
+          </a>
+
+          <a class="contato__canal" href="https://github.com/marcelooliveira8052668-cyber" target="_blank" rel="noopener">
+            <span class="contato__icone">⌥</span>
+            <span class="contato__info">
+              <strong>GitHub</strong>
+              <small>@marcelooliveira8052668-cyber</small>
+            </span>
+          </a>
+
+          <a class="contato__canal" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <span class="contato__icone">in</span>
+            <span class="contato__info">
+              <strong>LinkedIn</strong>
+              <small>/in/marcelo-oliveira</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <p>© <span id="ano-atual">2026</span> Marcelo Oliveira · Desenvolvedor Front-End</p>
+      <div class="rodape__links">
+        <a href="#topo">Voltar ao topo ↑</a>
+        <a href="scanner-pdf-iphone/" class="rodape__scanner">Scanner de Documentos</a>
+        <a href="trilha-corporativa/" class="rodape__scanner">Trilha Corporativa · SENAI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=1" defer></script>
+</body>
+</html>
