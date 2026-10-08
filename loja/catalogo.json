@@ -1,0 +1,304 @@
+{
+  "versao": 2,
+  "moeda": "BRL",
+  "precoUnico": 199.99,
+  "precoLancamento": true,
+  "atualizado": "2026-10-08",
+
+  "_comoAdicionar": "Para adicionar um produto novo, COPIE um bloco do array 'produtos' e troque id, nome, preco, capa (caminho em ../screenshots/) e arquivo (nome do .zip). Nada mais precisa mudar.",
+
+  "config": {
+    "apiBase": "https://loja-api.marcelooliveira8052668-cyber.workers.dev",
+    "emailSuporte": "marcelo@seusite.com.br",
+    "prazoDownloadDias": 7,
+    "licenca": "Uso comercial liberado. O comprador pode alterar o código, usar em clientes próprios e revender o produto final. Proibido revender o código-fonte puro."
+  },
+
+  "manutencao": {
+    "nome": "Manutenção de site",
+    "preco": 39.9,
+    "unidade": "visita",
+    "garantia": "Trabalho garantido: se não ficar do jeito pedido, eu volto e corrijo sem custo extra. Sem deixar ninguém na mão.",
+    "inclui": [
+      "Atualização de conteúdo e imagens",
+      "Correção de erros e links quebrados",
+      "Ajustes de layout e responsividade",
+      "Publicação no GitHub Pages"
+    ]
+  },
+
+  "produtos": [
+    {
+      "id": "scanner-de-documentos",
+      "nome": "Scanner de Documentos",
+      "categoria": "Apps",
+      "tagline": "Transforma o celular em escâner profissional, 100% offline.",
+      "descricao": "Aplicação web progressiva (PWA) que captura documentos com a câmera, melhora a nitidez automaticamente, organiza em páginas, exporta PDF e compartilha no WhatsApp. Funciona sem internet depois da primeira visita e pode ser instalada como aplicativo.",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "destaque": true,
+      "capa": "../screenshots/scanner-de-documentos.png",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/scanner-de-documentos/",
+      "tags": ["PWA", "Offline", "Câmera", "PDF"],
+      "inclui": [
+        "Código-fonte completo (HTML, CSS e JavaScript)",
+        "Service Worker para funcionamento offline",
+        "Instalação como aplicativo no Android e iPhone",
+        "Exportação em PDF e compartilhamento no WhatsApp",
+        "PDF de instruções de publicação"
+      ],
+      "arquivo": "scanner-de-documentos.zip"
+    },
+    {
+      "id": "calculadora-cientifica",
+      "nome": "Calculadora Científica iPhone",
+      "categoria": "Apps",
+      "tagline": "44 teclas, 20 funções científicas, memória e histórico.",
+      "descricao": "Calculadora científica completa com visual de iPhone. Trigonometria, logaritmos, potências, fatorial, funções inversas, modo graus/radianos, memória, histórico de contas e suporte a teclado físico. O motor de cálculo é próprio, baseado em tokenização e notação polonesa reversa — sem usar eval().",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "destaque": true,
+      "capa": "../screenshots/Calculadora-iphone.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/Calculadora-iphone/",
+      "tags": ["JavaScript", "Matemática", "Sem dependências"],
+      "inclui": [
+        "Código-fonte dos 3 arquivos (HTML, CSS, JS)",
+        "20 funções científicas com modo DEG/RAD",
+        "Memória (MC MR M+ M− MS) e histórico persistente",
+        "Design responsivo com acessibilidade",
+        "PDF de instruções de publicação"
+      ],
+      "arquivo": "calculadora-cientifica.zip"
+    },
+    {
+      "id": "gerador-de-sites-dola",
+      "nome": "Gerador de Sites Dola PRO",
+      "categoria": "Ferramentas",
+      "tagline": "O visitante preenche um formulário e o site é gerado pronto.",
+      "descricao": "Ferramenta que gera uma página institucional completa a partir das informações fornecidas pelo usuário: nome, slogan, serviços, contatos e cores. Entrega o código HTML pronto para publicar.",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "destaque": true,
+      "capa": "../screenshots/gerador-de-sites.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/gerador-de-sites/",
+      "tags": ["Ferramenta", "Gerador", "Automação"],
+      "inclui": [
+        "Código-fonte completo em arquivo único",
+        "Formulário de geração personalizado",
+        "Templates de saída configuráveis",
+        "PDF de instruções de uso e publicação"
+      ],
+      "arquivo": "gerador-de-sites-dola.zip"
+    },
+    {
+      "id": "minha-loja-online",
+      "nome": "Loja Online Completa",
+      "categoria": "Comércio",
+      "tagline": "E-commerce com carrinho, cupom, frete e avaliações.",
+      "descricao": "Loja virtual completa com catálogo de produtos, busca, filtros, carrinho, cupom de desconto, cálculo de frete, formas de pagamento e avaliações de clientes.",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "capa": "../screenshots/Codigo-Loja-Online.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/codigo-loja-online/",
+      "tags": ["E-commerce", "Carrinho", "Cupom"],
+      "inclui": [
+        "Catálogo com 50 produtos de exemplo",
+        "Carrinho completo com cupom de desconto",
+        "Cálculo de frete e formas de pagamento",
+        "Página de avaliações de clientes",
+        "PDF de instruções de publicação"
+      ],
+      "arquivo": "minha-loja-online.zip"
+    },
+    {
+      "id": "checkout-cyber-metal",
+      "nome": "Checkout Cyber Metal",
+      "categoria": "Comércio",
+      "tagline": "Tela de finalização de compra em React + Vite.",
+      "descricao": "Componente de checkout completo construído em React com Vite: formulário de pagamento, validação de cartão, resumo do pedido, cupom e confirmação de compra.",
+      "preco": 199.99,
+      "precoDepois": 247,
+      "capa": "../screenshots/checkout-cyber-metal.jpg",
+      "tags": ["React", "Vite", "Checkout"],
+      "inclui": [
+        "Projeto React + Vite completo",
+        "Validação de formulário e cartão",
+        "Resumo do pedido e cupom de desconto",
+        "README com comandos de instalação e build"
+      ],
+      "arquivo": "checkout-cyber-metal.zip"
+    },
+    {
+      "id": "comanda-facil",
+      "nome": "Comanda Fácil",
+      "categoria": "Comércio",
+      "tagline": "Sistema de comandas para lanchonete e restaurante.",
+      "descricao": "Sistema de pedidos com controle de mesa, status em tempo real (aberta, em preparo, pronta), impressão de comanda e histórico de vendas.",
+      "preco": 199.99,
+      "precoDepois": 247,
+      "capa": "../screenshots/comandas.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/comandas/",
+      "tags": ["Restaurante", "Pedidos", "Gestão"],
+      "inclui": [
+        "Cadastro de produtos e mesas",
+        "Controle de status dos pedidos",
+        "Impressão de comanda",
+        "Relatório de vendas"
+      ],
+      "arquivo": "comanda-facil.zip"
+    },
+    {
+      "id": "nf-control",
+      "nome": "NF Control",
+      "categoria": "Comércio",
+      "tagline": "Controle e emissão de notas fiscais.",
+      "descricao": "Sistema de controle de notas fiscais com cadastro de clientes, emissão, acompanhamento de status e relatórios consolidados.",
+      "preco": 199.99,
+      "precoDepois": 247,
+      "capa": "../screenshots/NF-Control.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/NF-Control/",
+      "tags": ["Fiscal", "Relatórios", "Gestão"],
+      "inclui": [
+        "Cadastro de clientes e produtos",
+        "Emissão e acompanhamento de notas",
+        "Relatórios consolidados por período",
+        "Exportação de dados"
+      ],
+      "arquivo": "nf-control.zip"
+    },
+    {
+      "id": "devbook",
+      "nome": "DevBook",
+      "categoria": "Educação",
+      "tagline": "Livro didático digital de programação com revisão espaçada.",
+      "descricao": "Plataforma de estudo que organiza o livro de Full Stack em capítulos, com progresso salvo, exercícios e um sistema de repetição espaçada que agenda revisões automaticamente.",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "capa": "../screenshots/devbook.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/devbook/",
+      "tags": ["Livro", "Estudo", "Revisão espaçada"],
+      "inclui": [
+        "Leitor de capítulos com progresso salvo",
+        "Sistema de revisão espaçada automático",
+        "Exercícios por capítulo",
+        "Painel de estatísticas de estudo"
+      ],
+      "arquivo": "devbook.zip"
+    },
+    {
+      "id": "trilha-corporativa",
+      "nome": "Trilha Corporativa SENAI",
+      "categoria": "Educação",
+      "tagline": "Plataforma de capacitação corporativa com painel do aluno.",
+      "descricao": "Sistema corporativo de capacitação com trilhas de aprendizagem, painel do aluno com progresso, acompanhamento de módulos e indicadores.",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "capa": "../screenshots/Plataforma_Corporativa_SENAI.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/Portifolio-2/trilha-corporativa/",
+      "tags": ["SENAI", "Treinamento", "Corporativo"],
+      "inclui": [
+        "Trilhas e módulos de aprendizagem",
+        "Painel do aluno com progresso",
+        "Sistema de acompanhamento",
+        "Projeto acadêmico documentado"
+      ],
+      "arquivo": "trilha-corporativa.zip"
+    },
+    {
+      "id": "globaltalk-lab",
+      "nome": "GlobalTalk Lab",
+      "categoria": "Educação",
+      "tagline": "Plataforma de prática de inglês com etapas guiadas.",
+      "descricao": "Plataforma de idiomas com lições, exercícios de vocabulário, gramática, listening e acompanhamento de progresso do aluno.",
+      "preco": 199.99,
+      "precoDepois": 247,
+      "capa": "../screenshots/english-platform.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/english-platform/",
+      "tags": ["Inglês", "Idiomas", "Lições"],
+      "inclui": [
+        "Lições com exercícios de vocabulário",
+        "Prática de listening",
+        "Painel de progresso do aluno",
+        "Conteúdo de demonstração incluso"
+      ],
+      "arquivo": "globaltalk-lab.zip"
+    },
+    {
+      "id": "lina-tutor-ia",
+      "nome": "Lina — Tutor de Inglês com IA",
+      "categoria": "Educação",
+      "tagline": "Tutora virtual que explica, corrige e cria exercícios.",
+      "descricao": "Assistente de estudo que conversa em inglês, explica gramática, corrige frases do aluno e gera exercícios personalizados conforme o nível.",
+      "preco": 199.99,
+      "precoDepois": 297,
+      "capa": "../screenshots/tutor-IA.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/tutor-IA/",
+      "tags": ["IA", "Inglês", "Conversa"],
+      "inclui": [
+        "Interface de chat com a tutora",
+        "Correção de frases em inglês",
+        "Gerador de exercícios por nível",
+        "Explicações de gramática"
+      ],
+      "arquivo": "lina-tutor-ia.zip"
+    },
+    {
+      "id": "skillmatch",
+      "nome": "SkillMatch",
+      "categoria": "Sistemas",
+      "tagline": "Conecta vagas e candidatos por compatibilidade de habilidades.",
+      "descricao": "Plataforma que cadastra vagas e perfis, calcula a compatibilidade por habilidade e sugere os melhores candidatos para cada posição.",
+      "preco": 199.99,
+      "precoDepois": 247,
+      "capa": "../screenshots/SkillMatch-web.jpg",
+      "demo": "https://marcelooliveira8052668-cyber.github.io/SkillMatch-web/",
+      "tags": ["Recrutamento", "Vagas", "Matching"],
+      "inclui": [
+        "Cadastro de vagas e candidatos",
+        "Motor de compatibilidade por habilidade",
+        "Ranking de candidatos por vaga",
+        "Painel de resultados"
+      ],
+      "arquivo": "skillmatch.zip"
+    }
+  ],
+
+  "pacotes": [
+    {
+      "id": "pack-comercio",
+      "nome": "Comércio & Vendas",
+      "descricao": "Tudo que um comércio precisa para vender: loja, checkout, comandas e controle fiscal.",
+      "produtos": ["minha-loja-online", "checkout-cyber-metal", "comanda-facil", "nf-control"],
+      "preco": 599.99,
+      "economia": "4 projetos por R$ 399,98 de desconto"
+    },
+    {
+      "id": "pack-educacao",
+      "nome": "Educação & Livros",
+      "descricao": "Plataformas de ensino completas: livro digital, repetição espaçada, idiomas e capacitação corporativa.",
+      "produtos": ["devbook", "globaltalk-lab", "lina-tutor-ia", "trilha-corporativa"],
+      "preco": 599.99,
+      "economia": "4 projetos por R$ 399,98 de desconto"
+    },
+    {
+      "id": "pack-apps",
+      "nome": "Apps & Ferramentas",
+      "descricao": "Aplicativos prontos para usar: scanner PWA, calculadora científica e gerador de sites.",
+      "produtos": ["scanner-de-documentos", "calculadora-cientifica", "gerador-de-sites-dola"],
+      "preco": 449.99,
+      "economia": "3 projetos por R$ 149,97 de desconto"
+    },
+    {
+      "id": "pack-tudo",
+      "nome": "Pacote Completo",
+      "descricao": "Todos os 12 códigos da loja de uma vez. Melhor custo por projeto.",
+      "produtos": [
+        "scanner-de-documentos", "calculadora-cientifica", "gerador-de-sites-dola",
+        "minha-loja-online", "checkout-cyber-metal", "comanda-facil", "nf-control",
+        "devbook", "trilha-corporativa", "globaltalk-lab", "lina-tutor-ia", "skillmatch"
+      ],
+      "preco": 1499.99,
+      "economia": "12 projetos por R$ 899,89 de desconto"
+    }
+  ]
+}
